@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins|Roboto&display=swap');
+
+* {
+    margin : 0;
+    padding : 0;
+
+    font-family : 'Roboto', sans-serif;
+}
+
+a, a:active {
+    color : white;
+    text-decoration : none;
+}
+
+img {
+    user-select : none;
+}
+
+
+html {
+    background-color : #ffffff;
+}
+
+header {
+    width : 100%;
+    height : 60px;
+
+    background-color : #20232A;
+
+    box-shadow : 0 0 10px rgba(21,21,21, 0.6);
+}
+#HeaderContainer {
+    max-width : 1024px;
+    width : 100%;
+    height : 100%;
+
+    display : flex;
+    flex-direction : row;
+    justify-content : space-around;
+    align-items : stretch;
+}
+
+
+nav {
+    height : 100%;
+
+    display : flex;
+    flex-direction : row;
+    justify-content : space-around;
+    align-items : center;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.navLink {
+    height : 100%;
+    
+    padding : 0 25px 0 25px;
+
+    display : flex;
+    flex-direction : row;
+    align-items : center;
+
+    user-select : none;
+        
+    color : white;
+    font-size : 20px;
+
+}
+.navLink:hover {
+    border-bottom : 4px solid #ff793f;
+    box-shadow : 0 0 15px rgba(21,21,21, 0.6);
+    
+    color : #f7895a;
+
+    transition : 0.2s;
+}
+
+/* 
+    Main
+*/
+main {
+    width : 80%;
+    max-width : 1200px;
+    min-height : 500px;
+
+    margin-top : 75px;
+    margin-left : auto;
+    margin-right : auto;
+}
+
+
+/* 
+    Liste des discussions container & composants
+*/
+#PresentationContainer {
+    width : 90%;
+    max-width : 1024px;
+}
+
+#leftSide {
+    position : relative;
+
+    display : flex;
+    flex-direction : row;
+    justify-content : center;
+}
+#rightSide {
+    width : 320px;
+
+    float : right;
+}
+
+
+
+#PresentationContainerBG {
+    width : 50%;
+    
+    opacity: 0;
+    position : absolute;
+    z-index : -1;
+
+    opacity: 1;
+
+    -webkit-filter: drop-shadow(0 2px 2px rgba(21,21,21,0.4));
+    filter: drop-shadow(0 2px 2px rgba(21,21,21,0.4));
+
+    animation : AnimationSection 1s ease-in-out;
+}
+#IphoneImg {
+    width : 300px;
+
+    overflow: hidden;
+
+    animation : AnimationSection 1s ease-in-out;
+}
+
+
+
